@@ -1,2 +1,2 @@
 # GyralParti
-GyralNet Subnetwork Partitioning via Differentiable Spectral Modularity Optimization
+Official implementation of paper "GyralNet Subnetwork Partitioning via Differentiable Spectral Modularity Optimization"
