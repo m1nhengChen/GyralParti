@@ -1,7 +1,9 @@
 # GyralParti
 Official implementation of paper "GyralNet Subnetwork Partitioning via Differentiable Spectral Modularity Optimization"
 
+<div align="center">
 <img src="/fig/overall.png" width="600px" style="display: block; margin: 0 auto;"/>
+</div>
 
 1. **Clone the repository:**
    ```bash
