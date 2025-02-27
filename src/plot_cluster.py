@@ -19,10 +19,10 @@ def plot_matrix(matrix, title, save_path=None):
 adj_matrix = np.random.rand(100, 100) < 0.05  # Random sparse adjacency matrix
 
 # Load cluster assignments
-cluster_assignments = np.load("/home/minheng/UTA/graph_embedding/dmon/cluster_results/clusters_4/100206_cluster_assignments_lh.npy")[:, 1]
+cluster_assignments = np.load("./cluster_results/clusters_4/100206_cluster_assignments_lh.npy")[:, 1]
 
 # Load cluster features
-cluster_features = np.load("/home/minheng/UTA/graph_embedding/dmon/cluster_results/clusters_4/100206_cluster_features_lh.npy")[:, 1:]
+cluster_features = np.load("./cluster_results/clusters_4/100206_cluster_features_lh.npy")[:, 1:]
 
 # Compute covariance matrices
 cov_matched = np.cov(cluster_features, rowvar=False)
