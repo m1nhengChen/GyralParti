@@ -23,13 +23,13 @@ point_indices = assignment_matrix[:, 0].astype(int)
 print("Point indices from assignment file:", point_indices)
 cluster_labels = assignment_matrix[:, 1]  # these are the subject's (real) cluster numbers
  
-excel_file_path = f"/media/minheng/hdd_3/HCP_cc_0819/HCP_new/{subject_id}/GyralNet_files/{subject_id}_info_lh.xlsx"
+excel_file_path = f"/HCP/{subject_id}/GyralNet_files/{subject_id}_info_lh.xlsx"
 df = pd.read_excel(excel_file_path, sheet_name="GyralNet_Graph")
 point_ids = df["center 3hinge ID"].values.astype(int)
 print("Point IDs from Excel:", point_ids)
  
 # --------- Load Brain Surface VTK File ---------
-vtk_file_path = f"/media/minheng/hdd_3/HCP_cc_0819/HCP_new/{subject_id}/lh.white.dsi_fa.vtk"
+vtk_file_path = f"HCP/{subject_id}/lh.white.dsi_fa.vtk"
 reader = vtk.vtkPolyDataReader()
 reader.SetFileName(vtk_file_path)
 reader.Update()
